@@ -1,7 +1,5 @@
 import 'dart:convert';
-
 import 'package:http/http.dart'as http;
-
 import '../Model/WorldStatesModel.dart';
 import 'Utilities/app_url.dart';
 class StatesServices{

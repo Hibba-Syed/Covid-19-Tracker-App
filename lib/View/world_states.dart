@@ -3,7 +3,6 @@ import 'package:covid_tracker/Services/states_services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:pie_chart/pie_chart.dart';
-
 import 'countries_list.dart';
 class WorldStatesScreen extends StatefulWidget {
   const WorldStatesScreen({Key? key}) : super(key: key);
@@ -29,7 +28,6 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
     const Color(0xff1aa260),
     const Color(0xffde5246),
   ];
-
   @override
   Widget build(BuildContext context) {
     StatesServices statesServices = StatesServices();
@@ -46,7 +44,6 @@ class _WorldStatesScreenState extends State<WorldStatesScreen> with TickerProvid
                 FutureBuilder(
                     future: statesServices.fecthWorldStatesRecords(),
                     builder: (context,AsyncSnapshot<WorldStatesModel> snapshot){
-
                 if(!snapshot.hasData){
                  return  Expanded(
                    flex: 1,
